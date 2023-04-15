@@ -1,0 +1,117 @@
+.root {
+    /* Colors */
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --acent-color: #4D5AE5;
+    --primary-white-color: #FFFFFF;
+    --dark-background-color: #2E2F42;
+    --light-background-color: #F4F4FD;
+    --primary-background-color: #E5E5E5;
+    /* Fonts */
+    --primary-font: roboto, sans-serif --secondary-font: raleway, sans-serif
+        /* Others */
+
+}
+
+/* Header styles */
+.header {}
+
+.header-nav {}
+
+.header-logo {}
+
+.header-nav-list {}
+
+.header-nav-item {}
+
+.header-nav-link {}
+
+.heade-address {}
+
+.header-address-list {}
+
+.header-address-item {}
+
+.header-address-link {}
+
+
+/* Main styles */
+.hero {}
+
+.hero-title {}
+
+.hero-btn {}
+
+
+/* About styles */
+.about {}
+
+.about-title {}
+
+.about-list {}
+
+.about-item {}
+
+.about-subtitle {}
+
+.about-description {}
+
+
+/* Services styles */
+.services {}
+
+.services-title {}
+
+.services-list {}
+
+.services-item {}
+
+.services-img {}
+
+
+/* Team styles */
+.team {}
+
+.team-title {}
+
+.team-list {}
+
+.team-item {}
+
+.team-img {}
+
+.team-subtitle {}
+
+.team-description {}
+
+
+/* Content styles */
+.content {}
+
+.content-list {}
+
+.content-item {}
+
+.content-button {}
+
+
+/* Projects stules */
+.projects {}
+
+.projects-list {}
+
+.projects-item {}
+
+.projects-img {}
+
+.projects-subtitle {}
+
+.projects-description {}
+
+
+/* Footer styles */
+.footer {}
+
+.footer-link {}
+
+.footer-description {}
