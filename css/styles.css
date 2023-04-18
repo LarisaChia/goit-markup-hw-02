@@ -24,7 +24,7 @@
 
 /* Base styles */
 
-.body {
+body {
     font-family: Roboto sans-serif;
     color: #434455;
     background-color: #FFFFFF;
@@ -93,7 +93,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--title-text-color);
 }
 
 .description {
