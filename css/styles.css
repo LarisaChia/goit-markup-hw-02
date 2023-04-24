@@ -357,7 +357,10 @@ button: {
     margin-bottom: 72px;
 }
 
-.content-item {}
+/* .content-item:nth-last-child(4n) {
+    margin-bottom: 48px;} */
+
+
 
 .content-button {
     display: inline-block;
