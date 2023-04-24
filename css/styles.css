@@ -18,9 +18,10 @@
     /* fonts */
     --primary-font: Roboto, sans-serif;
     --secondary-font: Raleway, sans-serif;
+
     /* others */
-    --indent: 20px;
-    --item: 4;
+    --indent: 24px;
+    --items: 4;
 
 }
 
@@ -89,6 +90,10 @@ button: {
     color: var(--acent-color);
 }
 
+.section {
+    padding-bottom: 120px;
+}
+
 .logo>.link {}
 
 .logo-text {
@@ -115,7 +120,6 @@ button: {
 }
 
 .subtitle {
-    margin-bottom 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -125,6 +129,7 @@ button: {
 }
 
 .description {
+    margin-top: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -136,12 +141,24 @@ button: {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 2px solid tomato;
-    outline-offset: -2px;
+
+}
+
+/* card set */
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.card-set-item {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 /* Header styles */
-.header {}
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
 
 .header-container {
     display: flex;
@@ -212,24 +229,31 @@ button: {
 /* Main styles */
 /* Hero styles */
 .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
     background-color: var(--title-text-color)
 }
 
 .hero-title {
     margin-bottom: 48px;
-    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    text-align: center;
 
     color: var(--primary-white-color);
 }
 
 .hero-button {
-    display: inline-block;
+    display: block;
     padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 169px;
     min-height: 56px;
     border-radius: 4px;
@@ -238,7 +262,6 @@ button: {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    text-align: center;
     background-color: var(--acent-color);
     cursor: pointer;
 }
@@ -256,13 +279,15 @@ button: {
 
 /* About styles */
 .about {
-    padding-top: 85px;
-    padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .about-title {}
 
-.about-list {}
+.about-list {
+    display: flex;
+    gap: 24px;
+}
 
 .about-item {}
 
@@ -272,9 +297,13 @@ button: {
 
 
 /* Services styles */
+
+
 .services {}
 
-.services-title {}
+.services-title {
+    margin-bottom: 72px;
+}
 
 .services-list {}
 
@@ -288,7 +317,9 @@ button: {
     background-color: var(--light-bg-color);
 }
 
-.team-title {}
+.team-title {
+    margin-bottom: 72px;
+}
 
 .team-list {}
 
@@ -297,10 +328,16 @@ button: {
 }
 
 .team-desc {
-    padding: 31px 16px;
+    padding-bottom: 32px;
+    text-align: center;
+
+    border-radius: 0 0 4px 4px;
+
 }
 
-.team-img {}
+.team-img {
+    margin-bottom: 32px;
+}
 
 .team-subtitle {}
 
@@ -308,13 +345,16 @@ button: {
 
 
 /* Content styles */
-.content {}
+.content {
+    padding-top: 96px;
+}
 
 .content-list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 72px;
 }
 
 .content-item {}
@@ -349,11 +389,17 @@ button: {
 /* Projects styles */
 .projects {}
 
-.projects-list {}
+.projects-list {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
 
-.projects-item {}
+.projects-item: {}
 
-.projects-img {}
+.projects-img {
+    margin-bottom: 32px;
+}
 
 .projects-subtitle {}
 
@@ -362,9 +408,12 @@ button: {
 
 /* Footer styles */
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     color: var(--light-bg-color);
     background-color: var(--dark-bg-color);
 }
+
 
 .footer-logo-text {
     font-family: "Raleway", sans-serif;
@@ -372,8 +421,11 @@ button: {
 
 }
 
-.footer-link {}
+.footer-link {
+    display: inline-block;
+}
 
 .footer-description {
+    width: 264px;
     color: var(--light-bg-color);
 }
